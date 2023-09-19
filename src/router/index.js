@@ -10,6 +10,7 @@ import ResetPassword from '../views/ResetPassword.vue'
 import JobView from '../views/JobView.vue'
 import ListCompanyView from '../views/ListCompanyView.vue'
 import PayRollView from '../views/PayRollView.vue'
+import HireView from '../views/HireView.vue'
 const routes = [
   {
     path: '/',
@@ -83,6 +84,11 @@ const routes = [
     path: '/payroll',
     name: 'payroll',
     component: PayRollView,
+  },
+  {
+    path: '/hire',
+    name: 'hire',
+    component: HireView,
   },
 ]
 
