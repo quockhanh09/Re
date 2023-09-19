@@ -4,7 +4,7 @@
       <div class="ss__banner-container container">
         <div class="ss__banner-row row">
           <div
-            class="col-md-6 col-12 order-sm-1 order-2 ss__banner-col ss__banner-col--right"
+            class="col-md-6 col-12 ss__banner-col ss__banner-col--right"
           >
             <div class="ss__banner-text">
               <h1 class="ss__banner-text--main">
@@ -179,7 +179,7 @@
                 <div class="ss__hire-service-container-text container">
                     <div class="col-12">
                         <div class="row">
-                            <div class="ss__hire-service-text-block p-0 col-lg-5 col-md-12 col-12">
+                            <div class="ss__hire-service-text-block p-0 col-lg-5  col-12">
                                 <div class="ss__hire-service-text-block-container">
                                     <div class="ss__hire-service-text-block--title">
                                         ABOUT OUR SERVICE
@@ -202,10 +202,10 @@
                 <div class="order-lg-2 order-md-1 order-1">
                     <div class="col-12">
                         <div class="row">
-                            <div class="ss__hire-service-text-block p-0 col-lg-5 col-md-12 col-12">
+                            <div class="ss__hire-service-text-block p-0 col-lg-5  col-12">
 
                             </div>
-                            <div class="p-0 col-lg-7 col-md-12 col-12 order-lg-2 order-md-1 order-1">
+                            <div class="p-0 col-12">
                                 <div class="ss__hire-service-image-block">
                                     <img src="https://recruitery.co/assets/img/screen-service-image.png">
                                 </div>
@@ -379,6 +379,69 @@
             </div>
         </div>
     </section>
+
+    <section class="ss__get-start">
+        <div class="ss__get-start-world">
+            <img src="https://recruitery.co/assets/img/get-start-world.png">
+        </div>
+        <div class="ss__get-start-container">
+            <h2 class="ss__get-start-title">
+                Get Started
+            </h2>
+            <div class="ss__get-start-card container">
+                <div class="ss__get-start-card-container">
+                    <div class="ss__get-start-card-top-line"></div>
+                    <div class="ss__get-start-card-col ss__get-start-card-col--left">
+                        <div class="ss__get-start-card-col__title">
+                            Start from
+                        </div>
+                        <div class="ss__get-start-card-col__price">
+                            <span class="ss__get-start-card-col__price--root">USD 400</span><br>
+                            <span>USD 150</span>
+                        </div>
+                        <div class="ss__get-start-card-col__content">
+                            Per employee per month
+                        </div>
+                    </div>
+                    <div class="ss__get-start-card-col ss__get-start-card-col--right">
+                        <div class="ss__get-start-card-col__title">
+                            Contact sale
+                        </div>
+                        <div class="ss__get-start-card-col__form">
+                            <form id="form-payroll-1" class="ss__get-start-card-col__form-container" data-parsley-validate="" novalidate="">
+                                <input type="hidden" id="title" name="title" value="Contact Service Payroll">
+                                <input type="hidden" id="typeId" name="typeId" value="5">
+                                <div class="ss__get-start-card-col__form-control">
+                                    <input type="text" id="name" name="name" placeholder="Name" autocomplete="off" required="" data-parsley-required-message="The field is required." fdprocessedid="upg2o7">
+                                </div>
+                                <div class="ss__get-start-card-col__form-control">
+                                    <input type="email" id="email" name="email" placeholder="Email" autocomplete="off" data-parsley-trigger="change" required="" data-parsley-required-message="The field is required." data-parsley-type-message="Email address is not valid." data-parsley-checkemail="" data-parsley-checkemail-message="Please use a company email." fdprocessedid="xnlreg">
+                                </div>
+                                <div class="ss__get-start-card-col__form-control">
+                                    <input type="text" id="phone" name="phone" placeholder="Phone" autocomplete="off" required="" data-parsley-required-message="The field is required." fdprocessedid="o2s7c">
+                                </div>
+                                <div class="ss__get-start-card-col__form-control">
+                                    <textarea id="content" name="content" placeholder="Any thing else" rows="5"></textarea>
+                                </div>
+                                <div class="ss__get-start-card-col__form-btn">
+                                    <button class="ss__get-start-card-col__form-btn--submit" fdprocessedid="3f9708">Send</button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="ss__get-start-card-col__contact-sale">
+                            <div class="ss__get-start-card-col__contact-sale-text">
+                                We’re here to help! If you have any question you can contact by
+                            </div>
+                            <div class="ss__get-start-card-col__contact-sale-phone">
+                              <i class="fa-solid fa-phone"></i>
+                                <a class="ss__get-start-card-col__contact-sale-phone--phone" href="tel:84776756799">+84 776756799</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
   </div>
 </template>
 
@@ -421,7 +484,7 @@ export default {
 <style scoped>
 .main {
   width: 100%;
-  height: 3500px;
+  height: 4100px;
 }
 /* .container {
     width: 100%;
@@ -896,7 +959,7 @@ ul{
     display: flex;
     flex-direction: row;
 }
-.fa-solid{
+.fa-star{
   height: 22px;
     width: auto;
 }
@@ -950,7 +1013,7 @@ svg {
 
 .ss__testimonial-card-list--next {
     top: 50%;
-    left: 0;
+    right: 0;
     
     transform: translate(-50%,-50%);
 }
@@ -987,37 +1050,232 @@ svg {
     box-shadow: rgba(0,0,0,.25) 0 14px 28px, rgba(0,0,0,.22) 0 10px 10px;
 }
 
-/* .ss__testimonial-card-list--prev {
-    top: 50%;
-    left: 10px; 
-    transform: translate(0%, -50%); 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
-    border: none;
-    padding: 8px;
-    border-radius: 50%;
-    outline: 0;
-    cursor: pointer;
-    position: absolute;
-    box-shadow: rgba(0,0,0,.25) 0 14px 28px, rgba(0,0,0,.22) 0 10px 10px;
+/* 6s */
+.ss__get-start {
+    background-color: #e7eeef;
+    position: relative;
+    height: 950px;
 }
 
-.ss__testimonial-card-list--next {
-    top: 50%;
-    right: 10px; 
-    transform: translate(0%, -50%); 
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    background: #fff;
-    border: none;
-    padding: 8px;
-    border-radius: 50%;
-    outline: 0;
-    cursor: pointer;
+.ss__get-start-world {
     position: absolute;
-    box-shadow: rgba(0,0,0,.25) 0 14px 28px, rgba(0,0,0,.22) 0 10px 10px;
-} */
+    left: 0;
+    bottom: 0;
+}
+.ss__get-start-world img {
+    width: 45%;
+    height: auto;
+}
+
+.ss__get-start-container {
+    padding: 80px 0 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ss__get-start-title {
+    font-family: "Kanit Medium",sans-serif!important;
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: normal;
+    text-align: center;
+    color: #0e194c;
+    margin-bottom: 40px;
+}
+
+.ss__get-start-card {
+    display: flex;
+    width: 70%;
+    position: relative;
+    flex-direction: row;
+}
+
+.ss__get-start-card-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.ss__get-start-card-top-line {
+    height: 6px;
+    border-radius: 8px;
+    background-color: #024e3f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.ss__get-start-card-col--left {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.2);
+}
+
+.ss__get-start-card-col__title {
+    font-family: Mulish,sans-serif!important;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -.4px;
+    text-align: center;
+    color: #0b5364;
+    margin-bottom: 5px;
+}
+
+.ss__get-start-card-col__price {
+    font-family: Mulish,sans-serif!important;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -.87px;
+    text-align: left;
+    color: #0e194c;
+    margin-bottom: 10px;
+}
+
+.ss__get-start-card-col__price--root {
+    font-family: Mulish,sans-serif!important;
+    text-decoration-line: line-through;
+    font-size: 28px;
+    color: #0b5364;
+    font-weight: 400;
+}
+
+.ss__get-start-card-col__content {
+    font-family: Mulish,sans-serif!important;
+    font-size: 22px;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.45;
+    letter-spacing: -.4px;
+    color: #0b5364;
+    margin-bottom: 16px;
+}
+
+.ss__get-start-card-col {
+    width: 100%;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.ss__get-start-card-col__title {
+    font-family: Mulish,sans-serif!important;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -.4px;
+    text-align: center;
+    color: #0b5364;
+    margin-bottom: 5px;
+}
+
+.ss__get-start-card-col__form {
+    width: 100%;
+    margin-top: 8px;
+}
+.ss__get-start-card-col--right {
+    background-color: #c9e9ef;
+    padding: 50px 75px;
+}
+.ss__get-start-card-col__form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+input textarea {
+  overflow: auto;
+    margin: 0;
+}
+
+
+.ss__get-start-card-col__form-control {
+    background-color: transparent;
+}
+
+.ss__get-start-card-col__form-control input {
+    font-family: Mulish,sans-serif!important;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: 0;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
+}
+
+.ss__get-start-card-col__form-control textarea {
+    font-family: Mulish,sans-serif!important;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: 0;
+    resize: none;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: solid 1px #e5e5e5;
+    background-color: #fff;
+}
+
+.ss__get-start-card-col__form-btn--submit {
+    font-family: Mulish,sans-serif!important;
+    border-radius: 5px;
+    background-color: #1aa94c;
+    border: none;
+    outline: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    padding: 13px 0;
+    font-size: 16px;
+}
+
+.ss__get-start-card-col__contact-sale {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.ss__get-start-card-col__contact-sale-text {
+    font-family: Mulish,sans-serif!important;
+    font-size: 1rem;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -.33px;
+    color: #0e194c;
+    margin-top: 24px;
+}
+
+.ss__get-start-card-col__contact-sale-phone {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.fa-phone{
+    font-size: 24px;
+    color: #0e194c;
+}
+.ss__get-start-card-col__contact-sale-phone--phone {
+    font-family: Mulish,sans-serif!important;
+    font-size: 24px;
+    font-weight: 700;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: -.44px;
+    color: #0e194c;
+    text-decoration: none;
+}
 </style>
