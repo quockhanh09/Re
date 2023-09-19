@@ -49,93 +49,96 @@
             <a href="javascript:void(0)" onclick="selectKeyword('Mobile')" class="searcher-suggest-item">Mobile</a>
           </div>
         </div>
+        
+        <div class="row searcher-filter" data-select2-id="11">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 searcher-filter-item searcher-filter-select-multi">
 
-        <div class="row searcher-filter">
-          <!-- Select City -->
-          <div class="col-lg-3 col-md-3 col-sm-6 col-6 searcher-filter-item searcher-filter-select-multi">
-            <select
-              class="select2 searcher-filter-select select2-hidden-accessible "
-              name="city"
-              id="lbLocation"
-              tabindex="-1"
-              aria-hidden="true"
-              v-model="selectedCity"
-            >
-              <option value="0" class=" select-filter1">All Location</option>
-              <option
-                v-for="location in locations"
-                :key="location.value"
-                :value="location.value"
-                class=" select-filter1"
-              >
-                {{ location.label }}
-              </option>
-            </select>
-          </div>
+                    <select class="select2 searcher-filter-select select2-hidden-accessible" name="city" id="lbLocation" data-select2-id="lbLocation" tabindex="-1" aria-hidden="true">
+                        <option value="0" data-select2-id="2">All Location</option>
+                                    <option class="dropdown-item" value="1">Ho Chi Minh</option>
+                                    <option class="dropdown-item" value="2">Hanoi</option>
+                                    <option class="dropdown-item" value="1019">Remote</option>
+                                    <option class="dropdown-item" value="1052">India</option>
+                                    <option class="dropdown-item" value="3">Da Nang</option>
+                                    <option class="dropdown-item" value="1010">Singapore</option>
+                                    <option class="dropdown-item" value="1025">Philippines</option>
+                                    <option class="dropdown-item" value="1047">Thua Thien Hue</option>
+                                    <option class="dropdown-item" value="1062">Vietnam</option>
+                                    <option class="dropdown-item" value="1011">Kuala Lumpur</option>
+                                    <option class="dropdown-item" value="1058">South Korea</option>
+                                    <option class="dropdown-item" value="1074">Chennai</option>
+                                    <option class="dropdown-item" value="1075">Bangalore</option>
+                                    <option class="dropdown-item" value="1078">Sri Lanka</option>
+                                    <option class="dropdown-item" value="1020">Binh Duong</option>
+                                    <option class="dropdown-item" value="1048">Indonesia</option>
+                                    <option class="dropdown-item" value="1007">Malaysia</option>
+                                    <option class="dropdown-item" value="1071">Pune</option>
+                                    <option class="dropdown-item" value="1006">Japan</option>
+                                    <option class="dropdown-item" value="1061">The United States</option>
+                                    <option class="dropdown-item" value="1014">Nha Trang </option>
+                                    <option class="dropdown-item" value="1070">United Arab Emirates</option>
+                                    <option class="dropdown-item" value="1076">Dubai</option>
+                                    <option class="dropdown-item" value="1081">Da Lat</option>
+                                    <option class="dropdown-item" value="1082">Johor</option>
+                                    <option class="dropdown-item" value="1083">Toronto</option>
+                                    
+                    </select>
+                    <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 221.25px;">
+                      <span class="selection">
+                        <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-lbLocation-container">
+                           <span class="select2-selection__rendered" id="select2-lbLocation-container" role="textbox" aria-readonly="true" title="All Location">All Location</span>
+                           <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b>
+                          </span>
+                        </span>
+                      </span><span class="dropdown-wrapper" aria-hidden="true">
 
-          <!-- Select Job Type -->
-          <div class="searcher-filter-item">
-            <select
-              id="lbJobType"
-              class="select2 searcher-filter-select"
-              name="role"
-              tabindex="-1"
-              aria-hidden="true"
-              v-model="selectedJobType"
-            >
-              <option value="0">All Jobs</option>
-              <option
-                v-for="jobType in jobTypes"
-                :key="jobType.value"
-                :value="jobType.value"
-              >
-                {{ jobType.label }}
-              </option>
-            </select>
-          </div>
+                           </span>
+                          </span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 searcher-filter-item searcher-filter-select-multi">
+                    <select id="lbJobType" class="select2 searcher-filter-select select2-hidden-accessible" name="role" data-select2-id="lbJobType" tabindex="-1" aria-hidden="true">
+                            <option value="0" selected="" data-select2-id="4">All Jobs</option>
+                                                    <option value="1">IT/Technology</option>
+                                                    <option value="2">Non-IT</option>
+                        
+                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="3" style="width: 221.25px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-lbJobType-container"><span class="select2-selection__rendered" id="select2-lbJobType-container" role="textbox" aria-readonly="true" title="All Jobs">All Jobs</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 searcher-filter-item" data-select2-id="10">
+                    <select id="lbSalaryRange" class="select2 searcher-filter-select select2-hidden-accessible" name="SalaryRange" data-select2-id="lbSalaryRange" tabindex="-1" aria-hidden="true">
+                            <option value="" selected="" data-select2-id="6">Salary</option>
+                                                    <option value="&amp;salaryfrom=0&amp;salaryto=500" data-select2-id="17">≤ $500</option>
+                                                    <option value="&amp;salaryfrom=500&amp;salaryto=1000" data-select2-id="18">$500 - $1000</option>
+                                                    <option value="&amp;salaryfrom=1000&amp;salaryto=1500" data-select2-id="19">$1000 - $1500</option>
+                                                    <option value="&amp;salaryfrom=1500&amp;salaryto=2000" data-select2-id="20">$1500 - $2000</option>
+                                                    <option value="&amp;salaryfrom=2000&amp;salaryto=3000" data-select2-id="21">$2000 - $3000</option>
+                                                    <option value="&amp;salaryfrom=3000&amp;salaryto=0" data-select2-id="22">≥ $3000</option>
+                    </select>
+                    <span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="1" style="width: 221.25px;">
+                      <span class="selection">
+                        <span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-lbLocation-container">
+                           <span class="select2-selection__rendered" id="select2-lbLocation-container" role="textbox" aria-readonly="true" title="Salary">Salary</span>
+                           <span class="select2-selection__arrow" role="presentation"><b role="presentation"></b>
+                          </span>
+                        </span>
+                      </span>
+                      <span class="dropdown-wrapper" aria-hidden="true">
 
-          <!-- Select Salary Range -->
-          <div class="searcher-filter-item">
-            <select
-              id="lbSalaryRange"
-              class="select2 searcher-filter-select select2-hidden-accessible"
-              name="SalaryRange"
-              tabindex="-1"
-              aria-hidden="true"
-              v-model="selectedSalaryRange"
-            >
-              <option value="">Salary</option>
-              <option
-                v-for="salaryRange in salaryRanges"
-                :key="salaryRange.value"
-                :value="salaryRange.value"
-              >
-                {{ salaryRange.label }}
-              </option>
-            </select>
-          </div>
+                           </span>
+                          </span>
+                </div>
 
-          <!-- Select Sort By -->
-          <div class="searcher-filter-item">
-            <select
-              id="sortBy"
-              class="select2 searcher-filter-select select2-hidden-accessible"
-              name="sortBy"
-              tabindex="-1"
-              aria-hidden="true"
-              v-model="selectedSortBy"
-            >
-              <option value="" disabled>Sorted by:</option>
-              <option
-                v-for="sortByOption in sortByOptions"
-                :key="sortByOption.value"
-                :value="sortByOption.value"
-              >
-                {{ sortByOption.label }}
-              </option>
-            </select>
-          </div>
-        </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 col-6 searcher-filter-item">
+                    <select id="sortBy" class="searcher-filter-select select2-hidden-accessible" name="sortBy" data-select2-id="sortBy" tabindex="-1" aria-hidden="true">
+                        <option value="&amp;sort=index&amp;order=desc" disabled="">Sorted by:</option>
+                            <option value="" selected="" data-select2-id="8">Default</option>
+                                                    <option value="&amp;sort=bonusAmount&amp;order=desc">Reward from high to low</option>
+                                                    <option value="&amp;sort=bonusAmount&amp;order=asc">Reward from low to high</option>
+                                                    <option value="&amp;sort=salaryFrom&amp;order=desc">Salary from high to low</option>
+                                                    <option value="&amp;sort=salaryFrom&amp;order=asc">Salary from low to high</option>
+                    </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="7" style="width: 221.25px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-sortBy-container"><span class="select2-selection__rendered" id="select2-sortBy-container" role="textbox" aria-readonly="true" title="Default">Default</span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+                </div>
+                
+            </div>
       </div>
     </section>
     <!--  -->
@@ -200,33 +203,6 @@
 export default {
   data() {
     return {
-      selectedCity: 0,
-      selectedJobType: 0,
-      selectedSalaryRange: "",
-      selectedSortBy: "",
-      locations: [
-        { value: 1, label: "Ho Chi Minh" },
-        { value: 2, label: "Hanoi" },
-        
-      ],
-      jobTypes: [
-        { value: 1, label: "IT/Technology" },
-        { value: 2, label: "Non-IT" },
-       
-      ],
-      salaryRanges: [
-        { value: "&salaryfrom=0&salaryto=500", label: "≤ $500" },
-        { value: "&salaryfrom=500&salaryto=1000", label: "$500 - $1000" },
-        
-      ],
-      sortByOptions: [
-        { value: "&sort=index&order=desc", label: "Default" },
-        {
-          value: "&sort=bonusAmount&order=desc",
-          label: "Reward from high to low",
-        },
-      
-      ],
 
       jobs: [
         {
@@ -679,6 +655,127 @@ a {
   text-decoration: none;
 }
 
+/* tesst */
+.searcher-filter {
+    margin-top: 15px;
+    padding: 0 7.5px;
+}
+
+.searcher-filter-item {
+    margin-top: 15px;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
+}
+
+.searcher-filter-item select {
+    height: 40px;
+    padding: 0 10px;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    white-space-collapse: collapse;
+    text-wrap: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+
+.searcher-filter-select {
+    width: 100%!important;
+    background-color: #fff;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.select2-hidden-accessible {
+    border: 0 ;
+    clip: rect(0 0 0 0) ;
+
+    clip-path: inset(50%) ;
+    height: 1px ;
+    overflow: hidden ;
+    padding: 0 ;
+    position: absolute ;
+    width: 1px ;
+    white-space: nowrap ;
+}
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+.select2-container {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    vertical-align: middle;
+}
+
+.searcher-filter-select-multi .select2-container{
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.select2-container {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+
+.select2-container .select2-selection--single {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    user-select: none;
+}
+
+.searcher-filter .select2-selection--multiple, .searcher-filter .select2-selection--single {
+    height: 40px;
+}
+.searcher-filter .select2-container--open .select2-selection--single {
+    border-color: #1aa94c;
+}
+
+.searcher-filter .select2-selection--single .select2-selection__rendered {
+    line-height: 40px;
+}
+.select2-container .select2-selection--single .select2-selection__rendered {
+    display: block;
+    padding-left: 8px;
+    padding-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px;
+}
+
+.searcher-filter .select2-selection__arrow {
+    height: 40px!important;
+}
 /*  */
 .searcher-suggest {
   margin-top: 7px;
@@ -720,7 +817,22 @@ padding: 8px 10px;
 .select2-hidden-accessible select{
   margin-left: 20px;
 }
-
+.select2-container--default.select2-container--open .select2-selection--single .select2-selection__arrow b {
+    border-color: transparent transparent #888 transparent;
+    border-width: 0 4px 5px 4px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+    border-color: #888 transparent transparent transparent;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    height: 0;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -2px;
+    position: absolute;
+    top: 50%;
+    width: 0;
+}
 /*  */
 
 .container2 {
