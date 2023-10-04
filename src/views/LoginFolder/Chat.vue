@@ -627,4 +627,57 @@ export default {
   background-color: #c8c4c4;
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .main {
+    height: auto; 
+  }
+
+  .chat-room_chat-room__container__TL2cR {
+    width: 100%; 
+  }
+
+  .chat-layout-v1_chat-layout-v1__container__ab45C {
+    flex-direction: column; 
+  }
+
+  .chat-room_chat-room__E0h4h {
+    width: 100%; 
+  }
+
+  .chat-room-search_chat-room-search__QRmsG {
+    width: 100%; 
+  }
+
+  .chat-room-search_chat-room-search__form-cover__O0Sc2 {
+    width: 100%; 
+  }
+
+  .chat-layout-v1_chat-layout-v1__profile-container__pdWQI {
+    width: 100%;
+  }
+
+  .ant-select .ant-select-selection-placeholder {
+    font-size: 12px;
+    max-width: 50%;
+  }
+
+  
+}
+
+
+@media (max-width: 576px) {
+  .main {
+   
+    width: 100%;
+    height: auto;
+    font-size: 16px; 
+  }
+
+
+  .chat-layout-v1_chat-layout-v1__container__ab45C {
+    flex-direction: column; 
+  }
+}
+
 </style>
