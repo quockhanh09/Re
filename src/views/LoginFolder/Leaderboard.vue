@@ -1545,5 +1545,38 @@ a {
     margin-right: 121px;
    height: 55px;
 }
-</style>
 
+@media (min-width: 768px) {
+    .leaderboard-layout_leaderboard-layout__container__n2eSj {
+        padding: 12px 32px 90px;
+    }
+
+    .ant-row {
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    .ant-col-lg-12 {
+        display: block;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .leaderboard-layout_leaderboard-layout__container__n2eSj {
+        padding: 12px 16px 90px;
+    }
+
+    .ant-row {
+        display: block;
+    }
+
+    .ant-col-lg-12 {
+        display: block;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+</style>
